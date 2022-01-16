@@ -4,6 +4,8 @@ var sessionId = "2_MX40NzQyOTUyMX5-MTY0MjI5ODI0MDI3Mn5tMmV4aXVLYktxTUNVSmhWSlpte
 var token = "T1==cGFydG5lcl9pZD00NzQyOTUyMSZzaWc9OWM3MWNhNjNlZTQ5ODVkZTdhNzZkMGFjY2ZhMDVjYzlkYjFmY2I2MDpzZXNzaW9uX2lkPTJfTVg0ME56UXlPVFV5TVg1LU1UWTBNakk1T0RJME1ESTNNbjV0TW1WNGFYVkxZa3R4VFVOVlNtaFdTbHB0ZUdKTmFFSi1mZyZjcmVhdGVfdGltZT0xNjQyMjk4MzIxJm5vbmNlPTAuMzgzODU2NTc4MDM4MDE2NzYmcm9sZT1wdWJsaXNoZXImZXhwaXJlX3RpbWU9MTY0NDg5MDMyMSZpbml0aWFsX2xheW91dF9jbGFzc19saXN0PQ==";
 let btn = document.createElement("button");
 //making publisher a global object
+//mav stands for "My audio and Video"
+var mav="on";
 var publisher={};
 // (optional) add server code here
 initializeSession();
@@ -42,15 +44,17 @@ function initializeSession() {
     }
   });
 }
-btn.innerHTML = "Turn off video";
+btn.innerHTML = "Toggle Video/Audio";
 btn.onclick = function () {
-if (ms=="on"){
+if (mav=="on"){
   publisher.publishVideo(false);
   publisher.publishAudio(false);
+  mav="off";
 }
 else {
   publisher.publishVideo(true);
   publisher.publishAudio(true);
+  mav="on";
 }
 };
 document.body.appendChild(btn);
