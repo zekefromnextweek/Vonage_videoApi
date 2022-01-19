@@ -1,7 +1,7 @@
 // replace these values with those generated in your TokBox Account
-var apiKey = "47429521";
-var sessionId = "2_MX40NzQyOTUyMX5-MTY0MjI5ODI0MDI3Mn5tMmV4aXVLYktxTUNVSmhWSlpteGJNaEJ-fg";
-var token = "T1==cGFydG5lcl9pZD00NzQyOTUyMSZzaWc9OWM3MWNhNjNlZTQ5ODVkZTdhNzZkMGFjY2ZhMDVjYzlkYjFmY2I2MDpzZXNzaW9uX2lkPTJfTVg0ME56UXlPVFV5TVg1LU1UWTBNakk1T0RJME1ESTNNbjV0TW1WNGFYVkxZa3R4VFVOVlNtaFdTbHB0ZUdKTmFFSi1mZyZjcmVhdGVfdGltZT0xNjQyMjk4MzIxJm5vbmNlPTAuMzgzODU2NTc4MDM4MDE2NzYmcm9sZT1wdWJsaXNoZXImZXhwaXJlX3RpbWU9MTY0NDg5MDMyMSZpbml0aWFsX2xheW91dF9jbGFzc19saXN0PQ==";
+var apiKey = "";
+var sessionId = "";
+var token = "";
 let btn = document.createElement("button");
 //making publisher a global object
 //mav stands for "My audio and Video"
